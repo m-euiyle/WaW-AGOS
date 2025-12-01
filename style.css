@@ -199,6 +199,7 @@ p{margin: 0;}
     align-items: center ;
     justify-content: space-between;
     justify-items: flex-start;
+    position: sticky;
 }
 
 .titleH {
@@ -298,4 +299,5 @@ p{margin: 0;}
     background-color: var(--third);
     border-radius: 32px;
     box-shadow: 0px 0px 10px var(--second);
+
 }
