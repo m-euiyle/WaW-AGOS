@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <title>Login</title>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="favicon.png">
+    </head>
+
+    <style>
+        body {
+            background-color: #2D506d;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            overflow: hidden;
+            box-sizing: border-box;
+            font-family: 'Montserrat';
+        }
+        .logo-holder{
+            width: 100%;
+            height: 25vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-container {
+            width: 100%;
+            height: 75vh;
+            background-color: white;
+            border-top-left-radius: 15vw;
+            border-top-right-radius: 15vw;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10vw;
+        }
+        .login-h1{
+            color: #2D506d;
+            font-weight: bolder;
+            font-size: 10vw;
+            margin: 0;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+        }
+        .form {box-sizing: border-box; width: 100%;display: flex;align-items: center;justify-content: center;flex-direction: column;}
+        .fill-up {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 5vh;
+            border-radius: 12px;
+            margin-bottom: 32px;
+            background-color: #F6F6F7;
+        }
+        .fill-up input {
+            border: none;
+            background: none;
+            height: 100%;
+            width: 100%;
+            font-size: 3.2vw;
+            font-weight: bold;
+            color: black;
+            opacity: 50%;
+        }
+        .fi {
+            color: black;
+            width: 5vw;
+            height: 5vw;
+            margin-left: 32px;
+            margin-right: 32px;
+            opacity: 50%;
+        }
+        .login {
+            font-size: 3.2vw;
+            font-weight: bold;
+            width: 100%;
+            height: 5vh;
+            border: none;
+            border-radius: 12px;
+            color: white;
+            background-color: #2D506d;
+            margin-top:32px;cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            text-decoration: none;
+        }
+        .fp {
+            text-decoration: none;
+            color: #2D506d;
+            font-size: 2vw;
+        }
+        .or {display: flex; align-items: center;justify-content: space-between; width: 100%;
+        box-sizing: border-box;}
+        .divider {
+            width: 40%;
+            height: 3px;
+            background-color: #2D506d;
+        }
+        .ortext {
+            color: #2D506d;
+            font-size: 3.2vw;
+            margin-left: 32px;
+            margin-right: 32px;
+            width: 75%;
+            text-align: center;}
+
+            .alt-login {
+      display: flex;
+      gap: 64px;
+    }
+
+    .alt-login button {
+      padding: 32px;
+      border-radius: 12px;
+      border: none;
+      background-color: #F6F6F7;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 5vh;
+      height: 5vh;
+    }
+        
+    </style>
+
+    <body>
+        <div class="main">
+            <div class="logo-holder">
+                <img src="wt.png" style="height: 75%;">
+            </div>
+        </div>
+
+        <div class="login-container">
+            <div class="header">
+                <h1 class="login-h1">Login</h1>
+            </div>
+
+            <div class="form">
+                <div class="fill-up">
+                    <i icon-name="mail" class="fi"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="fill-up">
+                    <i icon-name="lock" class="fi"></i>
+                    <input type="password" placeholder="Password">
+                </div>
+                <div style="display: flex; align-items: end; width: 100%; flex-direction: column;">
+                    <a href="#" class="fp">Forgot password?</a>
+                    <a class="login" href="loading.html">Login</a>
+                </div>
+            </div>
+
+            <div class="or">
+                <div class="divider"></div>
+                <a class="ortext">or continue with</a>
+                <div class="divider"></div>
+            </div>
+
+            <div class="alt-login">
+        <button>
+        <i data-lucide="chrome" class="fi" style="margin: 0;"></i>
+      </button>
+      <button>
+        <i data-lucide="facebook" class="fi" style="margin: 0;"></i>
+      </button>
+      <button>
+        <i data-lucide="github" class="fi"style="margin: 0;"></i>
+      </button>
+      <button>
+        <i data-lucide="linkedin" class="fi"style="margin: 0;"></i>
+      </button>
+    </div>
+<p class="ortext" style="height: auto; margin: 0;">don't have an account yet? <a href="#" style="color: #2D506d;">sign up!</a></p>
+        </div>
+    </body>
+
+        <script>
+        lucide.createIcons();
+        </script>
+    </body>
+</html>
