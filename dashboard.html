@@ -1,27 +1,72 @@
 <!DOCTYPE html>
 
-<html lang="en-US">
     <head>
-        <meta charset="UTF-8">
-        <title>Login</title>
+        <meta name="viewport" content="width = device-width, initial-scale=1.0" charset="UTF-8">
+        <title>Home</title>
         <script src="https://unpkg.com/lucide@latest"></script>
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="favicon.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
 
-    <body>
-        <div class="footer">
-            <a href="dashboard.html" id="bottom-button"><i icon-name="layout-dashboard"></i></a>
-            <a href="controls.html" id="bottom-button"><i icon-name="gamepad-directional"></i></a>
-            <a href="settings.html" id="bottom-button"><i icon-name="settings-2" ></i></a>
+<html lang="en">
+    <div class="dashboard-container">
+        <div class="H"><i icon-name="menu" style="width: 28px; height: 28px; color:#2d506d;"></i><p class="titleH" style="color:#2d506d;">dashboard</p></div>
+        <div class="bin-state" style="display: inline-flex;">
+            <div id="icon-holder"><img src="favicon.png" class="icon"></div>
+            <div class="info-boat" id="card-text">
+                <p class="small-text" style="color: #67676C;">Connected!</p>
+                <p class="big-title" style="color: #2d506d;">AGOS 1<i data-lucide="chevron-down" style="width: 24px; height: 24px; color: #67676C;"></i></p>
+            </div>
         </div>
-    </body>
-
-        <script>
-        lucide.createIcons();
-        </script>
-    </body>
+        <div class="grid">
+        <div class="big-card" style="height: 25vh;">
+            <div class="info-battery" id="card-text">
+                <p class="small-text" style="position: relative;">Battery</p>
+            </div>
+            <div class="battery" style="padding: 15px; align-items: center; display: flex;"> <i data-lucide="zap" style="width: 24px; height: 24px; color: white;"></i> <p class="big-title" style="position:relative; margin: 5px; color: white;">66%</p></div>
+        </div>
+            <div class="big-card" style="height: 25vh;">
+                <div class="info-bin" id="card-text">
+                <p class="small-text" style="position: relative;">Bin</p>
+            </div>
+            <div class="bin-bar" style="padding: 15px; align-items: center; display: flex;"> <i data-lucide="weight" style="width: 24px; height: 24px; color: white;"></i> <p class="big-title" style="position:relative; margin: 5px; color: white;">5kg</p></div>
+            </div>
+        </div>
+        <div class="bin-state" style="margin-top: 15px; padding: 15px; height: max-content;">
+            <p class="small-text">Water Quality</p>
+            <p class="big-text" style="align-content:center;width: max-content;">Great! <i data-lucide="sparkles" style="width: 16px; height: 16px; color: #67676C;"></i></p>
+            <p style="color: #67676C; font-size: 3.2vw;">pH level: 6.5 | Temperature: 40C</p>
+        </div>
+        <div class="grid">
+            <div class="bin-state" style="padding: 15px; height: max-content;">
+            <p class="small-text">Left Motor</p>
+            <p class="big-text" style="align-content:center;width: max-content;">Working <i data-lucide="check" style="width: 16px; height: 16px; color: #67676C;"></i></p>
+            <p style="color: #67676C; font-size: 3.2vw">Power Output: 10V</p>
+        </div>
+         <div class="bin-state" style="padding: 15px; height: max-content;">
+            <p class="small-text">Right Motor</p>
+            <p class="big-text" style="align-content:center;width: max-content;">Working <i data-lucide="check" style="width: 16px; height: 16px; color: #67676C;"></i></p>
+            <p style="color: #67676C; font-size: 3.2vw">Power Output: 10V</p>
+        </div>
+        </div>
+        <div class="bin-state" style="padding: 15px; height: max-content;">
+            <p class="small-text" style="margin-bottom: 15px;">Alerts</p>
+            <div class="bin-state" style="background-color: #ebebef; height: 25vh; margin-bottom: 0; padding: 15px;">
+                <p style="color: #67676C; margin-bottom: 5px; text-align: justify;">[12:00AM] - Collected 26g of trash.</p>
+                <p style="color: #67676C; margin-bottom: 5px; text-align: justify">[11:39AM] - Collected 15g of trash.</p>
+                <p style="color: #67676C; margin-bottom: 5px; text-align: justify">[11:00AM] - Collected 5g of trash.</p>
+                <p style="color: #67676C; margin-bottom: 5px; text-align: justify">[10:25AM] - Collected 30g of trash.</p>
+                <p style="color: #67676C; margin-bottom: 5px; text-align: justify">...</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container">
+        <div class="footer">
+            <a href="dashboard.html" class="sel"><i icon-name="layout-dashboard" class="bottom-button-sel"></i><div class="sel-ul"></div></a>
+            <a href="controls.html" ><i icon-name="gamepad-directional" class="bottom-button"></i></a>
+            <a href="settings.html" ><i icon-name="settings-2"  class="bottom-button"></i></a>
+    </div>
+    </div>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>lucide.createIcons()</script>
 </html>
